@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DQC-Dn-cM2">
-    <device id="retina6_5" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,7 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" barStyle="black" text="" translatesAutoresizingMaskIntoConstraints="NO" id="xiE-vn-E8j">
-                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="44" width="0.0" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="mYs-Yv-DjF"/>
+                                </constraints>
                                 <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -31,13 +34,21 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Lur-Ac-baP">
+                                <rect key="frame" x="142" y="262" width="131" height="390"/>
+                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xiE-vn-E8j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1q6-q2-xTu"/>
                             <constraint firstItem="xiE-vn-E8j" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9Ml-dw-did"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Lur-Ac-baP" secondAttribute="bottom" constant="161" id="GrE-0v-bcz"/>
+                            <constraint firstItem="Lur-Ac-baP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="JAD-Dm-sGC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lur-Ac-baP" secondAttribute="trailing" constant="141" id="JsT-SC-57A"/>
                             <constraint firstItem="F5H-nM-EUe" firstAttribute="top" secondItem="xiE-vn-E8j" secondAttribute="bottom" id="NRI-N4-8hz"/>
                             <constraint firstItem="xiE-vn-E8j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YWQ-8g-WGw"/>
+                            <constraint firstItem="Lur-Ac-baP" firstAttribute="top" secondItem="xiE-vn-E8j" secondAttribute="bottom" constant="162" id="ca8-70-Qbd"/>
                             <constraint firstItem="F5H-nM-EUe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gWy-G1-iSH"/>
                             <constraint firstItem="F5H-nM-EUe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="j6d-1o-Ccn"/>
                             <constraint firstItem="F5H-nM-EUe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qcT-Hk-Tws"/>
