@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let url = URL(string: "https://www.google.com ")
+        let url = URL(string: "https://www.google.com")
         
         let request = URLRequest (url: url!)
         
@@ -25,9 +25,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func back(_ sender: Any) {
+        
+        if webView.canGoBack {
+            
+            webView.goBack()
+        }
     }
     
     @IBAction func forward(_ sender: Any) {
+        
+        if webView.canGoForward {
+            
+            webView.goForward()
+        }
     }
     
     @IBAction func close(_ sender: Any) {
