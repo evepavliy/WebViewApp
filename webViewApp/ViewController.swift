@@ -29,6 +29,7 @@ class ViewController: UIViewController {
         if webView.canGoBack {
             
             webView.goBack()
+            
         }
     }
     
@@ -37,13 +38,20 @@ class ViewController: UIViewController {
         if webView.canGoForward {
             
             webView.goForward()
+            
         }
     }
     
     @IBAction func close(_ sender: Any) {
+        
+        webView.stopLoading()
+        
     }
     
     @IBAction func refresh(_ sender: Any) {
+        
+        webView.reload()
+        
     }
 }
 
