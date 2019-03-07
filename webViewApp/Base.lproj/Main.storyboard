@@ -45,11 +45,27 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem systemItem="rewind" id="ELL-pX-bU0"/>
-                        <barButtonItem systemItem="fastForward" id="pvE-JX-PAP"/>
+                        <barButtonItem systemItem="rewind" id="ELL-pX-bU0">
+                            <connections>
+                                <action selector="back:" destination="BYZ-38-t0r" id="Je8-8Y-hbY"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="fastForward" id="pvE-JX-PAP">
+                            <connections>
+                                <action selector="forward:" destination="BYZ-38-t0r" id="ikR-2E-fxd"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="J3M-tU-J3Q"/>
-                        <barButtonItem systemItem="refresh" id="oWj-Lm-xuf"/>
-                        <barButtonItem systemItem="stop" id="MsD-I0-nIm"/>
+                        <barButtonItem systemItem="refresh" id="oWj-Lm-xuf">
+                            <connections>
+                                <action selector="refresh:" destination="BYZ-38-t0r" id="3M9-xE-7KT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="stop" id="MsD-I0-nIm">
+                            <connections>
+                                <action selector="close:" destination="BYZ-38-t0r" id="EYM-4B-9xT"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="4LZ-JZ-Dv6"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>

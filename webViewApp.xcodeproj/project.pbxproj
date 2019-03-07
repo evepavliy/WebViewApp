@@ -14,6 +14,7 @@
 		C770546522288B5600911086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C770546322288B5600911086 /* LaunchScreen.storyboard */; };
 		C770547022288B5600911086 /* webViewAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C770546F22288B5600911086 /* webViewAppTests.swift */; };
 		C770547B22288B5600911086 /* webViewAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C770547A22288B5600911086 /* webViewAppUITests.swift */; };
+		C77054C42231C5AC00911086 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77054C32231C5AC00911086 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C770547622288B5600911086 /* webViewAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = webViewAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C770547A22288B5600911086 /* webViewAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webViewAppUITests.swift; sourceTree = "<group>"; };
 		C770547C22288B5600911086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C77054C32231C5AC00911086 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C77054C42231C5AC00911086 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				C770546E22288B5600911086 /* webViewAppTests */,
 				C770547922288B5600911086 /* webViewAppUITests */,
 				C770545822288B5100911086 /* Products */,
+				C77054C22231C5AA00911086 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				C770547C22288B5600911086 /* Info.plist */,
 			);
 			path = webViewAppUITests;
+			sourceTree = "<group>";
+		};
+		C77054C22231C5AA00911086 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C77054C32231C5AC00911086 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
