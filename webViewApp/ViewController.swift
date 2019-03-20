@@ -9,7 +9,7 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController, WKNavigationDelegate {
+class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegate {
 
     @IBOutlet weak var webView: WKWebView!
     
@@ -77,6 +77,18 @@ class ViewController: UIViewController, WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
         
         actInd.stopAnimating()
+        
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+        searchBar.resignFirstResponder()
+        
+        let url = URL(string: "https://\(searchBar.text!)")
+        
+        let request = URLRequest (url: url!)
+        
+        webView.load(request)
         
     }
 }
